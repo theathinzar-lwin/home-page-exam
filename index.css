@@ -1,0 +1,205 @@
+/* Common Font Style */
+body {
+    font-family: 'Coiny', cursive; /* Set Coiny font as the default for the body */
+}
+
+/* Navbar Styles */
+#navbar {
+    background: #E6E6FA; /* Light purple background (Lavender) */ 
+    position: absolute;
+    margin-top: 50px;
+    width: 100%; /* Ensure navbar stretches full width */
+    padding: 10px 0; /* Add some padding for better spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav a {
+    font-family: 'Coiny', cursive; /* Set Coiny font for navbar links */
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #C86C94 !important; /* Purple text color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 5px; /* Spacing between links */
+}
+
+nav a:hover {
+    color: #4B0082 !important; /* Slightly darker purple on hover */
+}
+
+#logo {
+    font-family: 'Coiny', cursive; /* Font for your logo */
+    font-size: 24px; /* Adjust size to your liking */
+    font-weight: bold;
+    color: #800080; /* Purple color */
+    margin-left: 20px; /* Moves it slightly to the right */
+}
+
+/* Landing Section Styles */
+#landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url("./images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; /* Ensure the landing section takes up the full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-family: 'Coiny', cursive; /* Apply Coiny font */
+    font-size: 45px;
+    font-weight: 1000;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+#text-title {
+    font-family: 'Coiny', cursive; /* Apply Coiny font */
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+#base {
+    font-family: 'Coiny', cursive; /* Apply Coiny font */
+    font-size: 16px; /* Smaller font size */
+    font-weight: bold;
+    color: #FFFFFF;
+    background: linear-gradient(45deg, #FFC0CB, #FF69B4); /* Cute pink gradient */
+    padding: 8px 25px; /* Reduced padding for a smaller button */
+    border-radius: 25px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3); /* Subtle shadow */
+    border: 2px solid #FF69B4; /* Border for definition */
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    letter-spacing: 0.5px; /* Less letter spacing */
+}
+
+#base:hover {
+    background: linear-gradient(45deg, #FFB6C1, #FF1493); /* Darker pink on hover */
+    color: #FFF5F7; /* Softer white-pink text on hover */
+    box-shadow: 0 6px 12px rgba(255, 20, 147, 0.5); /* Stronger shadow on hover */
+    transform: scale(1.03); /* Slightly enlarge on hover */
+}
+
+/* Flex Display */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* About Section */
+#about img {
+    width: 100%;
+    height: auto;
+    border-radius: 0; /* Remove the border-radius to keep the image rectangular */
+}
+
+/* About Section Styles */
+#about {
+    text-align: center; /* Center-align all text within the about section */
+}
+
+#about img {
+    width: 100%;  /* Ensures images take up full width of the container */
+    height: 400px;  /* Set a fixed height for all images */
+    object-fit: cover;  /* Ensures images are cropped to fill the container, maintaining aspect ratio */
+    border-radius: 0;  /* Remove the border-radius to keep the image rectangular */
+}
+
+
+#about h1 {
+    font-family: 'Coiny', cursive; /* Apply Coiny font */
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    color:  #C86C94; /* Change color to a cute shade (you can adjust this) */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#about p {
+    font-family: 'Coiny', cursive; /* Apply Coiny font */
+    font-size: 1.2rem; /* Adjust size as needed */
+    color: #8B005A; /* Change color to a very dark pink */
+    max-width: 800px; /* Optional: restrict width for better readability */
+    margin: 0 auto; /* Center the paragraph block */
+    text-align: left; /* Align text to the left */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: pink; /* Light pink color for the arrow icons */
+    border-radius: 50%; /* Optional: make the icon background round */
+    padding: 10px; /* Optional: add some padding to the arrow background */
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #FF69B4; /* Hot pink when hovered */
+}
+
+/* Section Title */
+#feature-products h2 {
+    font-family: 'Coiny', cursive;
+    font-size: 2.5rem;
+    color: #C86C94;
+    font-weight: bold;
+}
+
+/* Card Customization */
+.card {
+    background-color: #E6E6FA; /* Set card background to match navbar and footer */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+}
+
+.card-img-top {
+    height: 250px; /* Set fixed height */
+    object-fit: cover; /* Ensure the image covers the card without distortion */
+    background-color: transparent; /* Ensure the image background is transparent */
+}
+
+.card-title {
+    font-family: 'Coiny', cursive;
+    font-size: 1.5rem;
+    color: #C86C94; /* Match your site's color scheme */
+}
+
+.card-text {
+    font-family: 'Coiny', cursive;
+    font-size: 1.2rem;
+    color: #8B005A; /* Dark pink color for card text */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+#footer {
+    background-color: #E6E6FA; /* Light purple background */
+    color: #C86C94; /* Dark purple text color */
+    font-family: 'Coiny', cursive; /* Apply the same font for consistency */
+    font-size: 14px; /* Adjust font size */
+    padding: 20px 0; /* Padding for some space */
+    text-align: center; /* Center the text */
+    border-top: 1px solid #C86C94; /* Optional: Add a border on top for separation */
+}
+
+#footer p {
+    margin: 0; /* Remove default margin from paragraph */
+}
+
