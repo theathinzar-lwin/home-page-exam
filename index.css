@@ -1,53 +1,56 @@
 /* Common Font Style */
 body {
-    font-family: 'Coiny', cursive; /* Set Coiny font as the default for the body */
+    font-family: 'Coiny', cursive; /* Consistent font across the site */
 }
 
 /* Navbar Styles */
 #navbar {
-    background: #E6E6FA; /* Light purple background (Lavender) */ 
+    background: #E6E6FA; /* Lavender background for the navbar */
     position: absolute;
     margin-top: 50px;
-    width: 100%; /* Ensure navbar stretches full width */
-    padding: 10px 0; /* Add some padding for better spacing */
+    width: 100%; /* Full-width navbar */
+    padding: 10px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensure navbar stays on top of other elements */
 }
 
 nav a {
-    font-family: 'Coiny', cursive; /* Set Coiny font for navbar links */
+    font-family: 'Coiny', cursive;
     font-size: 18px;
     font-weight: bold;
     line-height: 22px;
     color: #C86C94 !important; /* Purple text color */
-    text-decoration: none; /* Remove underline */
-    margin-right: 5px; /* Spacing between links */
+    text-decoration: none;
+    margin-right: 15px; /* Increased spacing between links */
 }
 
 nav a:hover {
-    color: #4B0082 !important; /* Slightly darker purple on hover */
+    color: #4B0082 !important; /* Darker purple on hover */
 }
 
 #logo {
-    font-family: 'Coiny', cursive; /* Font for your logo */
-    font-size: 24px; /* Adjust size to your liking */
+    font-family: 'Coiny', cursive;
+    font-size: 24px;
     font-weight: bold;
-    color: #800080; /* Purple color */
-    margin-left: 20px; /* Moves it slightly to the right */
+    color: #800080;
+    margin-left: 20px;
 }
 
-/* Landing Section Styles */
-#landing {
-    background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url("./images/banner.png");
+/* Hero Section Styles */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url("./images/banner.png"), #000;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh; /* Ensure the landing section takes up the full height of the screen */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Align title and button vertically */
+    text-align: center; /* Center-align the title and button */
 }
 
 #title {
-    font-family: 'Coiny', cursive; /* Apply Coiny font */
+    font-family: 'Coiny', cursive;
     font-size: 45px;
     font-weight: 1000;
     line-height: 72px;
@@ -55,7 +58,7 @@ nav a:hover {
 }
 
 #text-title {
-    font-family: 'Coiny', cursive; /* Apply Coiny font */
+    font-family: 'Coiny', cursive;
     font-size: 20px;
     font-weight: 900;
     line-height: 30px;
@@ -65,28 +68,28 @@ nav a:hover {
 
 /* Button Styles */
 #base {
-    font-family: 'Coiny', cursive; /* Apply Coiny font */
-    font-size: 16px; /* Smaller font size */
+    font-family: 'Coiny', cursive;
+    font-size: 16px;
     font-weight: bold;
     color: #FFFFFF;
-    background: linear-gradient(45deg, #FFC0CB, #FF69B4); /* Cute pink gradient */
-    padding: 8px 25px; /* Reduced padding for a smaller button */
-    border-radius: 25px; /* Slightly rounded corners */
-    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3); /* Subtle shadow */
-    border: 2px solid #FF69B4; /* Border for definition */
+    background: linear-gradient(45deg, #FFC0CB, #FF69B4);
+    padding: 12px 30px;
+    border-radius: 30px; /* Rounder button corners */
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+    border: 2px solid #FF69B4;
     transition: all 0.3s ease;
-    text-transform: uppercase; /* Uppercase text for emphasis */
-    letter-spacing: 0.5px; /* Less letter spacing */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Slightly larger letter spacing */
 }
 
 #base:hover {
-    background: linear-gradient(45deg, #FFB6C1, #FF1493); /* Darker pink on hover */
-    color: #FFF5F7; /* Softer white-pink text on hover */
-    box-shadow: 0 6px 12px rgba(255, 20, 147, 0.5); /* Stronger shadow on hover */
-    transform: scale(1.03); /* Slightly enlarge on hover */
+    background: linear-gradient(45deg, #FFB6C1, #FF1493);
+    color: #FFF5F7;
+    box-shadow: 0 6px 12px rgba(255, 20, 147, 0.5);
+    transform: scale(1.05); /* Slightly larger hover effect */
 }
 
-/* Flex Display */
+/* Flexbox Display */
 .d-flex {
     display: flex;
     justify-content: center;
@@ -96,55 +99,48 @@ nav a:hover {
 }
 
 /* About Section */
+#about {
+    text-align: center; /* Center-align content in the about section */
+}
+
 #about img {
     width: 100%;
-    height: auto;
-    border-radius: 0; /* Remove the border-radius to keep the image rectangular */
+    height: 400px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover image to fill space */
+    border-radius: 0;
 }
-
-/* About Section Styles */
-#about {
-    text-align: center; /* Center-align all text within the about section */
-}
-
-#about img {
-    width: 100%;  /* Ensures images take up full width of the container */
-    height: 400px;  /* Set a fixed height for all images */
-    object-fit: cover;  /* Ensures images are cropped to fill the container, maintaining aspect ratio */
-    border-radius: 0;  /* Remove the border-radius to keep the image rectangular */
-}
-
 
 #about h1 {
-    font-family: 'Coiny', cursive; /* Apply Coiny font */
-    font-size: 2.5rem; /* Adjust size as needed */
-    font-weight: bold; /* Make it bold */
-    color:  #C86C94; /* Change color to a cute shade (you can adjust this) */
-    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Coiny', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #C86C94; /* Lavender */
+    margin-bottom: 20px;
 }
 
 #about p {
-    font-family: 'Coiny', cursive; /* Apply Coiny font */
-    font-size: 1.2rem; /* Adjust size as needed */
-    color: #8B005A; /* Change color to a very dark pink */
-    max-width: 800px; /* Optional: restrict width for better readability */
-    margin: 0 auto; /* Center the paragraph block */
+    font-family: 'Coiny', cursive;
+    font-size: 1.2rem;
+    color: #8B005A; /* Dark pink */
+    max-width: 800px;
+    margin: 0 auto;
     text-align: left; /* Align text to the left */
 }
 
+/* Carousel Controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: pink; /* Light pink color for the arrow icons */
-    border-radius: 50%; /* Optional: make the icon background round */
-    padding: 10px; /* Optional: add some padding to the arrow background */
+    background-color: pink;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
-    background-color: #FF69B4; /* Hot pink when hovered */
+    background-color: #FF69B4; /* Hot pink hover effect */
 }
 
-/* Section Title */
+/* Section Titles */
 #feature-products h2 {
     font-family: 'Coiny', cursive;
     font-size: 2.5rem;
@@ -152,54 +148,77 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* Card Customization */
+/* Card Styles */
 .card {
-    background-color: #E6E6FA; /* Set card background to match navbar and footer */
+    background-color: #E6E6FA;
     border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
+    transform: translateY(-10px); /* Hover lift */
 }
 
 .card-img-top {
-    height: 250px; /* Set fixed height */
-    object-fit: cover; /* Ensure the image covers the card without distortion */
-    background-color: transparent; /* Ensure the image background is transparent */
+    height: 250px;
+    object-fit: cover;
 }
 
 .card-title {
     font-family: 'Coiny', cursive;
     font-size: 1.5rem;
-    color: #C86C94; /* Match your site's color scheme */
+    color: #C86C94;
 }
 
 .card-text {
     font-family: 'Coiny', cursive;
     font-size: 1.2rem;
-    color: #8B005A; /* Dark pink color for card text */
+    color: #8B005A;
 }
 
-/* Responsive Layout */
+/* Responsive Layout for Small Screens */
 @media (max-width: 768px) {
+    #landing {
+        padding: 20px;
+    }
+
+    #title {
+        font-size: 35px; /* Smaller title size */
+        line-height: 50px;
+    }
+
+    #text-title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    #base {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
     .card-img-top {
-        height: 200px; /* Adjust height for smaller screens */
+        height: 200px; /* Smaller card image height */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 5px; /* Smaller control buttons */
     }
 }
 
+/* Footer */
 #footer {
-    background-color: #E6E6FA; /* Light purple background */
-    color: #C86C94; /* Dark purple text color */
-    font-family: 'Coiny', cursive; /* Apply the same font for consistency */
-    font-size: 14px; /* Adjust font size */
-    padding: 20px 0; /* Padding for some space */
-    text-align: center; /* Center the text */
-    border-top: 1px solid #C86C94; /* Optional: Add a border on top for separation */
+    background-color: #E6E6FA;
+    color: #C86C94;
+    font-family: 'Coiny', cursive;
+    font-size: 14px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #C86C94;
 }
 
 #footer p {
-    margin: 0; /* Remove default margin from paragraph */
+    margin: 0;
 }
-
